@@ -20,7 +20,7 @@ Example:
       "eventStartedAt": "funkhaus-2024",
       "projectName": "Airdrops for Everyone on Polkadot",
       "teamLead": "Daniel Vaculík",
-      "description": "Airdrops at the moment are very expensive. we aim to make them cheaper by utilising merkle trees/root and merkle proofs. It makes the airdrops multiple times cheaper. This project is a follow-up on an existing pull request to Polkadot SDK.",
+      "description": "Airdrops at the moment are very expensive. We aim to make them cheaper by utilising merkle trees/root and merkle proofs. It makes the airdrops multiple times cheaper. This project is a follow-up on an existing pull request to Polkadot SDK.",
       "githubRepo": "https://github.com/RostislavLitovkin/AirdropsForEveryone",
       "demoUrl": "nan",
       "slidesUrl": "nan",

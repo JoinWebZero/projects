@@ -47,12 +47,13 @@ export const ProjectCard = ({ Project: d }: Props) => {
               <div className="items-center text-sm">
                 <strong>Team lead: </strong>
               </div>
+
               <p>{d.teamLead}</p>
 
               <div className="items-center text-sm">
                 <strong>Donation address: </strong>
                 <a
-                  href={`https://assethub-polkadot.subscan.io/`}
+                  href={`https://assethub-polkadot.subscan.io/account/${d.donationAddress}`}
                   className="text-blue-500 underline"
                   target="_blank"
                   rel="noopener noreferrer"
