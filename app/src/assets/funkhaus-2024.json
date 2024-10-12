@@ -24,7 +24,8 @@
       "github_repository": "https://github.com/AnthonyAkentiev/Web3Summit_Hackathon",
       "project_demo": "https://anytype.io",
       "link_to_slides": "https://docs.google.com/presentation/d/1_hwlBbFb36U9f-ePhIKG44maaBdKzqZ6rOF-BKar4k0/edit?usp=sharing",
-      "tech_stack": "Golang, TypeScript"
+      "tech_stack": "Golang, TypeScript",
+      "donationAddress": "14cxwZgZtr376Bpg6BoMyfEYVD9oNdhmj7L452UgGFX7rxv7"
     },
     {
       "project_name": "ChainView",
@@ -87,7 +88,11 @@
       "github_repository": "https://github.com/delegit-xyz/dashboard",
       "project_demo": "nan",
       "link_to_slides": "https://docs.google.com/presentation/d/1SWbxKM9O3H5CB0CWYKDpizNt6j3B_gfR2daLCxolOCE/pub?start=false&loop=false&delayms=3000",
-      "tech_stack": "TS, React, Papi, DotConnect"
+      "tech_stack": "TS, React, Papi, DotConnect",
+      "donationAddress": "13cJVjVjHpabhge4XEjdXmVPgD6w2UaSp8bpnYX9sDcgwp45",
+      "milestones": [
+        "All core features shipped."
+      ]
     },
     {
       "project_name": "DePHY Access",
@@ -159,7 +164,8 @@
       "github_repository": "https://github.com/polkadot-api/web3-blockspace-actions/tree/main?tab=readme-ov-file",
       "project_demo": "https://web3-blockspace-actions.vercel.app/",
       "link_to_slides": "nan",
-      "tech_stack": "Polkadot API, React, RxJS"
+      "tech_stack": "Polkadot API, React, RxJS",
+      "donationAddress": "12R1XCdgkHysv8Y4ntiXguo4eUYHXjQTmfRjL8FbmezsG71j"
     },
     {
       "project_name": "peggd",
@@ -177,7 +183,8 @@
       "github_repository": "https://github.com/deeecent/propcorn/",
       "project_demo": "https://propcorn.deeecent.website/",
       "link_to_slides": "nan",
-      "tech_stack": "HardHat, react, wagmi"
+      "tech_stack": "HardHat, react, wagmi",
+      "donationAddress": "1BwHRVBz3MTvWCxojDqcAMfdK121Sp86HCRgbs2RtQiXPrY"
     },
     {
       "project_name": "QSTN",
