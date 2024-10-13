@@ -8,7 +8,8 @@ The repository serves the purpose of confirming the receipt of submitted milesto
 # Submitting a milestone
 
 1. Fork this repo.
-2. Find your project in the list of submissions (e.g. in "funkhaus-2024.json") and add a short description for the milestones completed.
+2. Go to `app/src/assets` and find your project in the list of submissions (e.g. in "funkhaus-2024.json")
+3. Modify the "milestones" filed and add a short description for the milestones you completed.
 3. Make a PR to this repo with your changes.
 4. Repo maintainers will review your PR and send you the cash prize for the milestone upon approval.
 
@@ -25,9 +26,9 @@ Example:
       "demoUrl": "nan",
       "slidesUrl": "nan",
       "techStack": "Rust, wasm, typescript, react",
-+     "milestones": {
-+       "1": "Submitted proof of concept at hackathon",
-+       "2": "Changes to asset pallet are merged into PolkadotSDK"
-      }
++     "milestones": [
++       "Submitted proof of concept at hackathon",
++       "Changes to asset pallet are merged into PolkadotSDK"
+        ]
     },
 ```

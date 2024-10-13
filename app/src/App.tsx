@@ -31,18 +31,21 @@ const App = () => {
               <NetworkContextProvider>
                 <ProjectContextProvider>
                   <AccountContextProvider>
-                      <TooltipProvider>
-                        <div className="flex min-h-screen w-full flex-col bg-muted/40">
+                    <TooltipProvider>
+                      <div className="flex min-h-screen w-full flex-col bg-muted/40">
                         <Navigation
-                lightClientLoaded={lightClientLoaded}
-                setLightClientLoaded={setLightClientLoaded}
-              />
-                          <div className="flex flex-col sm:gap-4 sm:py-4 sm:pl-14">
-                            <Header />
-                            <Content />
-                          </div>
+                          lightClientLoaded={lightClientLoaded}
+                          setLightClientLoaded={setLightClientLoaded}
+                        />
+                        <div className="flex flex-col sm:gap-4 sm:py-4 sm:pl-14">
+                          <Header />
+
+                          <div className="flex flex-col sm:py-4 sm:pl-14">
+                          <Content />
                         </div>
-                      </TooltipProvider>
+                        </div>
+                      </div>
+                    </TooltipProvider>
                   </AccountContextProvider>
                 </ProjectContextProvider>
               </NetworkContextProvider>

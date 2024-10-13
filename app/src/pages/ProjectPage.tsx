@@ -1,113 +1,163 @@
-import { Input } from '@/components/ui/input';
-import { Label } from '@/components/ui/label';
-import { useProjects } from '@/contexts/ProjectsContext';
-import { useNetwork } from '@/contexts/NetworkContext';
-import { Button } from '@/components/ui/button';
-import { useAccounts } from '@/contexts/AccountsContext';
-import { useParams } from 'react-router-dom';
-import { useEffect, useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
-export const ProjectPage: React.FC = () => {
-  const [commitDate, setCommitDate] = useState<string | null>(null);
-  const { donationAddress } = useParams();
-  const { getProjectByAddress } = useProjects();
-  const [Project, setProject] = useState(getProjectByAddress(donationAddress));
-  const [amount, setAmount] = useState<number>(0);
-  const { api } = useNetwork();
-  const { selectedAccount } = useAccounts();
+// Define project and category types
+interface Project {
+  projectName: string;
+  teamLead: string;
+  description: string;
+  githubRepo: string;
+  demoUrl: string;
+  slidesUrl: string;
+  techStack: string;
+  donationAddress?: string;
+}
 
-  // Fetch latest commit date when the project or GitHub repo changes
+const categories = [
+  'All',
+  'DeFi',
+  'Web3 Infrastructure',
+  'Social/Community Platforms',
+  'Governance and DAOs',
+  'Data and Analytics',
+  'Gaming and NFTs',
+  'Developer Tools',
+  'Decentralized Applications (dApps)',
+  'Climate and Sustainability',
+  'Content and Media',
+];
+
+// Mock function to fetch project data
+const fetchProjects = async (): Promise<Project[]> => {
+  const response = await fetch('/funkhaus-2024.json'); // Ensure the correct path to your JSON file
+  return await response.json();
+};
+
+const ProjectsPage: React.FC = () => {
+  const [projects, setProjects] = useState<Project[]>([]);
+  const [filteredProjects, setFilteredProjects] = useState<Project[]>([]);
+  const [selectedCategory, setSelectedCategory] = useState<string>('All');
+
   useEffect(() => {
-    if (Project?.githubRepo) {
+    // Fetch projects when component mounts
+    fetchProjects().then((data) => {
+      setProjects(data);
+      setFilteredProjects(data); // Initially display all projects
+    });
+  }, []);
 
-      const repoPath = Project.githubRepo.replace('https://github.com/', ''); // Extract "owner/repo"
-
-      fetch(`https://api.github.com/repos/${repoPath}/commits`)
-        .then(response => response.json())
-        .then(data => {
-          if (data && data.length > 0) {
-            const latestCommit = data[0];
-            setCommitDate(
-              new Date(latestCommit.commit.committer.date).toLocaleDateString('en-US', {
-                weekday: 'long',
-                year: 'numeric',
-                month: 'long',
-                day: 'numeric'
-              })
-            );
-          }
-        })
-        .catch(error => console.error('Error fetching commit data:', error));
+  // Function to filter projects by category
+  const filterByCategory = (category: string) => {
+    setSelectedCategory(category);
+    
+    if (category === 'All') {
+      // If "All" is selected, show all projects
+      setFilteredProjects(projects);
+    } else {
+      // Filter based on the selected category
+      const filtered = projects.filter((project) => {
+        switch (category) {
+          case 'DeFi':
+            return project.description.toLowerCase().includes('defi') || project.description.toLowerCase().includes('crypto');
+          case 'Web3 Infrastructure':
+            return project.description.toLowerCase().includes('infrastructure');
+          case 'Social/Community Platforms':
+            return project.description.toLowerCase().includes('community');
+          case 'Governance and DAOs':
+            return project.description.toLowerCase().includes('governance') || project.description.toLowerCase().includes('dao');
+          case 'Data and Analytics':
+            return project.description.toLowerCase().includes('data') || project.description.toLowerCase().includes('analytics');
+          case 'Gaming and NFTs':
+            return project.description.toLowerCase().includes('nft') || project.description.toLowerCase().includes('gaming');
+          case 'Developer Tools':
+            return project.description.toLowerCase().includes('tool') || project.description.toLowerCase().includes('developer');
+          case 'Decentralized Applications (dApps)':
+            return project.description.toLowerCase().includes('dapp');
+          case 'Climate and Sustainability':
+            return project.description.toLowerCase().includes('climate') || project.description.toLowerCase().includes('sustainability');
+          case 'Content and Media':
+            return project.description.toLowerCase().includes('content') || project.description.toLowerCase().includes('media');
+          default:
+            return false;
+        }
+      });
+      setFilteredProjects(filtered);
     }
-  }, [Project]);
-
-  // Fetch project data if it hasn't already been set
-  useEffect(() => {
-    if (!Project) {
-      setProject(getProjectByAddress(donationAddress));
-    }
-  }, [donationAddress, Project, getProjectByAddress]);
-
-  if (!Project || !api) return <div>No Project found</div>;
-
-  const onChangeAmount = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setAmount(Number(e.target.value));
-  };
-
-  if (!api || !selectedAccount) return <div>No account found</div>;
-
-  const onSign = async () => {
-    // Your donation sign logic goes here
   };
 
   return (
-    <main className="grid flex-1 items-start gap-4 p-4 sm:mx-[5%] xl:mx-[20%] mx-0 sm:px-6 sm:py-0 md:gap-8">
-      <h1 className="font-unbounded text-primary flex-1 shrink-0 whitespace-nowrap text-xl font-semibold tracking-tight sm:grow-0">
-        Donate to "{Project.projectName}"
-      </h1>
+    <main className="flex flex-col items-center justify-center gap-4 p-4">
+      <h1 className="text-3xl font-bold mb-4">Projects by Category</h1>
 
-      <div className="grid">
-        <div className="items-center text-sm">
-          <strong>Team lead: </strong> {Project.teamLead}
-        </div>
-
-        <div className="items-center text-sm">
-          <strong>Donation address</strong>:
-          <a
-            href={`https://assethub-polkadot.subscan.io/account/${Project.donationAddress}`}
-            className="text-blue-500 underline"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {Project.donationAddress}
-          </a>
-        </div>
-        
-        <div className="items-center text-sm">
-          <strong>Github</strong>:
-          <a href={Project.githubRepo} className="text-blue-500 underline" target="_blank" rel="noopener noreferrer">
-            {Project.githubRepo}
-          </a>
-          <br />
-        </div>
-
-        <div className="items-center pt-10">{Project.description}</div>
-
-        <div className="items-center text-sm pt-10">
-          <strong>Latest Commit Date:</strong> {commitDate ? commitDate : 'Loading...'}
-        </div>
-
-        <div className="pageTop">
-          <Label>Amount</Label>
-          <Input onChange={onChangeAmount} value={amount} />
-        </div>
+      {/* Category Selector */}
+      <div className="mb-4">
+        <label htmlFor="category-select" className="mr-2 font-semibold">
+          Select Category:
+        </label>
+        <select
+          id="category-select"
+          value={selectedCategory}
+          onChange={(e) => filterByCategory(e.target.value)}
+          className="border p-2 text-black bg-white" /* Ensure the text in the dropdown is visible */
+        >
+          {categories.map((category) => (
+            <option key={category} value={category}>
+              {category}
+            </option>
+          ))}
+        </select>
       </div>
 
-      <Button onClick={onSign} disabled={amount === 0}>
-        Support
-      </Button>
+      {/* Render Project Cards */}
+
+      <div className="flex flex-col items-center justify-center grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        {filteredProjects.length > 0 ? (
+          filteredProjects.map((project, index) => (
+            <div key={index} className="project-card border p-4 rounded-md shadow-md">
+              <h2 className="text-xl font-semibold mb-2">{project.projectName}</h2>
+              <p className="text-sm text-gray-600 mb-2">Team Lead: {project.teamLead}</p>
+              <p className="text-sm mb-4">{project.description}</p>
+              <p><strong>Tech Stack:</strong> {project.techStack}</p>
+
+              <div className="flex flex-col space-y-2 mt-4">
+                {project.githubRepo && (
+                  <a
+                    href={project.githubRepo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-500 underline"
+                  >
+                    GitHub Repository
+                  </a>
+                )}
+                {project.demoUrl && (
+                  <a
+                    href={project.demoUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-500 underline"
+                  >
+                    Demo
+                  </a>
+                )}
+                {project.slidesUrl && (
+                  <a
+                    href={project.slidesUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-500 underline"
+                  >
+                    Slides
+                  </a>
+                )}
+              </div>
+            </div>
+          ))
+        ) : (
+          <p>No projects found for the selected category.</p>
+        )}
+      </div>
     </main>
   );
 };
 
-export default ProjectPage;
+export default ProjectsPage;
