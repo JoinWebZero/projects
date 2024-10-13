@@ -3,10 +3,11 @@ import { useProjects } from '@/contexts/ProjectsContext'
 import HomePage from './pages/Home';
 
 import { Home } from '@/pages/Home'
-import { ProjectPage } from '@/pages/ProjectPage'
 import { toast } from 'sonner'
 import { useEffect } from 'react'
 import { useNetwork } from './contexts/NetworkContext'
+import ProjectPage from './pages/ProjectPage';
+import PastEvents from './pages/PastEvents';
 const pages = [
   {
     path: '',
@@ -29,16 +30,10 @@ export const Content = () => {
   }, [isLight, lightClientLoaded])
   return (
     <>
-      {/* <Routes>
-        {pages.map(({ path, element }, i) => {
-          return <Route key={`page_${i}`} path={path} element={element} />
-        })}
-      </Routes> */}
-
- 
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/projects" element={<ProjectPage />} />
+        <Route path="/past-events" element={<PastEvents />} />
       </Routes>
     </>
   )

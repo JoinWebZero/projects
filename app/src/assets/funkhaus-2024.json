@@ -1,262 +1,318 @@
 [
-    {
-      "project_name": "Airdrops for Everyone on Polkadot",
-      "team_lead_full_name": "Daniel Vaculík",
-      "description": "Airdrops at the moment are very expensive. we aim to make them cheaper by utilising merkle trees/root and merkle proofs. It makes the airdrops multiple times cheaper. This project is a follow-up on an existing pull request to Polkadot SDK.",
-      "github_repository": "https://github.com/RostislavLitovkin/AirdropsForEveryone",
-      "project_demo": "nan",
-      "link_to_slides": "nan",
-      "tech_stack": "Rust, wasm, typescript, react"
-    },
-    {
-      "project_name": "Alibi",
-      "team_lead_full_name": "James Lefrère",
-      "description": "High-resolution location proofs with TLSNotary allow users to prove their geolocation over time while maintaining privacy. By leveraging internet security and Google's data, Alibi lets users with a Google account prove their historical location without revealing unnecessary information, bridging Web2 and Web3.",
-      "github_repository": "https://github.com/orgs/w3s-alibi/repositories",
-      "project_demo": "https://havetorunthisbadboylocally.sorryaboutthat",
-      "link_to_slides": "https://docs.google.com/presentation/d/1sT8KSk_zZ-IuYjFFUmSgybwyKwERL2IJcDuE1_ZZvTs/edit?usp=sharing",
-      "tech_stack": "Rust, TypeScript, React."
-    },
-    {
-      "project_name": "Anytype - NFT Gating",
-      "team_lead_full_name": "Tony Kent",
-      "description": "Anytype Spaces are currently like Communities. You can Join spaces, share links, etc. You can Collaborate together - write docs, chat, etc. Let's add more Web3 SOCIAL FEATURES: add NFT token gating to the Anytype. If someone has a required NFT -> he can join the space.",
-      "github_repository": "https://github.com/AnthonyAkentiev/Web3Summit_Hackathon",
-      "project_demo": "https://anytype.io",
-      "link_to_slides": "https://docs.google.com/presentation/d/1_hwlBbFb36U9f-ePhIKG44maaBdKzqZ6rOF-BKar4k0/edit?usp=sharing",
-      "tech_stack": "Golang, TypeScript",
-      "donationAddress": "14cxwZgZtr376Bpg6BoMyfEYVD9oNdhmj7L452UgGFX7rxv7"
-    },
-    {
-      "project_name": "ChainView",
-      "team_lead_full_name": "nan",
-      "description": "Visualise and track transactions of a wallet address in a human-readable format.",
-      "github_repository": "https://github.com/gedithejedi/chainview",
-      "project_demo": "https://chain-view.vercel.app/",
-      "link_to_slides": "https://www.canva.com/design/DAGOe_VaGNI/M--Q61VEF7SCchmFV5-EZg/edit?utm_content=DAGOe_VaGNI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
-      "tech_stack": "NEXT, and some api calls"
-    },
-    {
-      "project_name": "ChatPay (as a Dapp, Cere integration)",
-      "team_lead_full_name": "Léonard Mangallon",
-      "description": "ChatPay is a Telegram Mini App that brings decentralization to data acquisition for the common good, allowing users to sell their data instead of having it taken by large platforms. During this hackathon, we developed a feature that allows users to store the data generated during quests in a decentralized manner, leveraging Cere's technology.",
-      "github_repository": "https://github.com/lmangall/chatpay_cere_feature",
-      "project_demo": "https://t.me/chatpayapp_bot/chatpayapp",
-      "link_to_slides": "https://docs.google.com/presentation/d/1CGZKZNb35VYOfA0cnfN144L2WpR6zfpY_vd9ZaTivbY/edit?usp=sharing",
-      "tech_stack": "next.js"
-    },
-    {
-      "project_name": "Clima Compass",
-      "team_lead_full_name": "Gesa Schneider",
-      "description": "Clima Compass is a gamified Web3 platform that incentivizes users to make predictions about global climate metrics. By rewarding accurate forecasts, it aims to increase climate awareness, gather valuable data insights, and foster positive environmental impact through partnerships and financial contributions.",
-      "github_repository": "https://github.com/mxber2022/Web3HackBerlin",
-      "project_demo": "nan",
-      "link_to_slides": "https://docs.google.com/presentation/d/12wyW2Bnft6RE8pi__v9P5HoLN77XTzR5vjKrEFdFB_8/edit#slide=id.g20e4fc113c20dbc9_81",
-      "tech_stack": "Rootstock, Cere Network, Sepolia Testnet, goldsky subgraph, SQL, Nextjs, Langchain"
-    },
-    {
-      "project_name": "CodeKarma",
-      "team_lead_full_name": "Luke Schoen",
-      "description": "CodeKarma - A CLI tool to check that the code you write aligns with your values written in your manifesto.",
-      "github_repository": "https://github.com/ltfschoen/CodeKarma",
-      "project_demo": "https://github.com/ltfschoen/CodeKarma?tab=readme-ov-file#working-demo",
-      "link_to_slides": "nan",
-      "tech_stack": "deno"
-    },
-    {
-      "project_name": "Crypto Knights",
-      "team_lead_full_name": "Matias Arkano",
-      "description": "Crypto Knight is a revolutionary platform designed to simplify your crypto investments. With Crypto Knight, you can invest in decentralized index funds managed by smart contracts, eliminating the need for human intervention and ensuring that your portfolio is rebalanced automatically based on real-time market conditions.",
-      "github_repository": "https://github.com/arkanoeth/CKweb3summit",
-      "project_demo": "nan",
-      "link_to_slides": "nan",
-      "tech_stack": "Solidity, Next,js"
-    },
-    {
-      "project_name": "CTRL+X",
-      "team_lead_full_name": "Arikia Millikan",
-      "description": "The Blocklicense is a web3 content licensing registry and relicensing marketplace for text-based journalistic content. Establishing content ownership enables downstream licensing transactions that extend ownership with the author's permission.",
-      "github_repository": "https://github.com/Arikia/ctrl-x",
-      "project_demo": "nan",
-      "link_to_slides": "https://docs.google.com/presentation/d/1q1j6W8yQc5lN4RPGA9iAMwgvzWgKI3hQ0xQx4C9fIuA/edit?usp=sharing",
-      "tech_stack": "NextJS ,Typescript, Blink (Solana), Phantom Wallet"
-    },
-    {
-      "project_name": "Delegit",
-      "team_lead_full_name": "Thibaut Sardan",
-      "description": "Increasing participation turnout is a key to decentralized governance. Delegation is a solution to low participation but it remained difficult until now. Delegit is a 2 click flow to delegate on Polkadot.",
-      "github_repository": "https://github.com/delegit-xyz/dashboard",
-      "project_demo": "nan",
-      "link_to_slides": "https://docs.google.com/presentation/d/1SWbxKM9O3H5CB0CWYKDpizNt6j3B_gfR2daLCxolOCE/pub?start=false&loop=false&delayms=3000",
-      "tech_stack": "TS, React, Papi, DotConnect",
-      "donationAddress": "13cJVjVjHpabhge4XEjdXmVPgD6w2UaSp8bpnYX9sDcgwp45",
-      "milestones": [
-        "All core features shipped."
-      ]
-    },
-    {
-      "project_name": "DePHY Access",
-      "team_lead_full_name": "Darren Seah",
-      "description": "DePHY Access is a dApp that facilitates user access to decentralized resources in the DePIN sector, like GPU rentals and decentralized cloud computing. It connects users to off-chain nodes via the internet, enhancing Web3 by securely accessing diverse decentralized resources.",
-      "github_repository": "https://github.com/jasl/blockspace-hackathon-2024",
-      "project_demo": "https://drive.google.com/file/d/175yXF5hHe_JqPTLDFhH_kXX3AKnSCs1t/view?usp=sharing",
-      "link_to_slides": "nan",
-      "tech_stack": "Ollama, EVM Pallet, dephy messaging layer, DePHY ID, Solidity?"
-    },
-    {
-      "project_name": "DeSciNet",
-      "team_lead_full_name": "Bruno Zell",
-      "description": "The network accepts causal models uploaded by users. Those are then tested against observations in the network and scored by surprise. The lowest surprise model is the consensus model.",
-      "github_repository": "https://github.com/BrunoZell/DeSciNet",
-      "project_demo": "https://no-demo.wtf",
-      "link_to_slides": "nan",
-      "tech_stack": "F#, Structured Causal Models (Judea Pearl)"
-    },
-    {
-      "project_name": "DOT Takeout",
-      "team_lead_full_name": "Karim Jedda",
-      "description": "Dot Takeout is the ultimate tax reporting tool for the Polkadot ecosystem. By aggregating data across all Polkadot chains, Dot Takeout provides users with a comprehensive, automated report of all transactions and blocks where their addresses have appeared. Instead of manually tracking accounts accross different Polkadot parachains and on different indexers, Dot Takeout is a purpose built tool that provides you all the data for your accounts in one place.",
-      "github_repository": "https://github.com/KarimJedda/takeout/",
-      "project_demo": "https://dottakeout.xyz",
-      "link_to_slides": "https://docs.google.com/presentation/d/1--9A0csRwvrof6-jZSfTFK3GjT1nsqCCW11r-E-eSUI/edit#slide=id.g2206d6f2d92_0_13",
-      "tech_stack": "Python, Flask, React"
-    },
-    {
-      "project_name": "Empathy Technologies",
-      "team_lead_full_name": "Yip ThyDiep Ta",
-      "description": "Empathy Technologies is a project that aims to optimize knowledge transfer and collaboration across diverse fields by mapping and translating complex information into user-specific contexts. Leveraging advanced cognitive science, semantics-based algorithms, and mathematical frameworks, the project seeks to minimize cognitive load and enhance learning efficiency within decentralized ecosystems.",
-      "github_repository": "https://github.com/JanetMo/empathy-technologies",
-      "project_demo": "https://www.figma.com/design/Y8kZM8UnarhOteoPDy10vC/empathy-technologies-mockup?node-id=0-1&t=fHxyXsJoQsMmvKmm-0",
-      "link_to_slides": "https://www.canva.com/design/DAGOd680kCE/CIw3fPEoWmXc5946PZD69A/edit?utm_content=DAGOd680kCE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
-      "tech_stack": "Python, Figma, C, GraphViz, Rust"
-    },
-    {
-      "project_name": "helixstreet",
-      "team_lead_full_name": "Tom Deisen",
-      "description": "helixstreet is building the future of life sciences and healthcare in the Web3 world. This hack session brought us closer to that vision, creating a flexible parathread pay as you go blockchain foundation. Agile core time will go live in the coming months on the Polkadot Chain and we want to be one of the first Agile Core Time chains on Polkadot.",
-      "github_repository": "https://github.com/helixstreet/helixstreet-node",
-      "project_demo": "https://helixstreet.io",
-      "link_to_slides": "nan",
-      "tech_stack": "substrate / frame / zombienet"
-    },
-    {
-      "project_name": "How to manage a Smart Co-working via Polkadot OpenGov",
-      "team_lead_full_name": "Makar Cherniaev",
-      "description": "Today I want to show you how, with the help of the large Polkadot OpenGov community, we can manage access to a shared coworking space.",
-      "github_repository": "https://github.com/nakata5321/robonomics/tree/hackaton",
-      "project_demo": "nan",
-      "link_to_slides": "https://docs.google.com/presentation/d/1cboIxpV20KAUwUFZfNICT-tYb_jdxNVsUOH4T7Kcsp0/edit?usp=sharing",
-      "tech_stack": "Polkadot, Robonomics, IPFS, Home Assistant"
-    },
-    {
-      "project_name": "Hypertents",
-      "team_lead_full_name": "Seun Lanlege",
-      "description": "Hypertents achieves cross-chain intent settling using Hyperbridge as the bridging layer.",
-      "github_repository": "https://github.com/jak-pan/hypertents",
-      "project_demo": "https://hackmd.io/WLU6CpxeSrix_m0ZiVJ0bg",
-      "link_to_slides": "https://hackmd.io/@Lederstrumpf/hypertents-presentation",
-      "tech_stack": "Hyperbridge, Solidity, Ethers, React"
-    },
-    {
-      "project_name": "PAPI Actions",
-      "team_lead_full_name": "Josep Maria Sobrepere Profitos",
-      "description": "This defines a series of intents, a routing system that uniquely identifies one action to be performed, which can be implemented by dApps or extensions. The idea is that anyone can \"Create an action\", which is serialised into a route, and then this route can be shared to other peers. A dApp implementation that supports that intent can then perform the action based on the user's state.",
-      "github_repository": "https://github.com/polkadot-api/web3-blockspace-actions/tree/main?tab=readme-ov-file",
-      "project_demo": "https://web3-blockspace-actions.vercel.app/",
-      "link_to_slides": "nan",
-      "tech_stack": "Polkadot API, React, RxJS",
-      "donationAddress": "12R1XCdgkHysv8Y4ntiXguo4eUYHXjQTmfRjL8FbmezsG71j"
-    },
-    {
-      "project_name": "peggd",
-      "team_lead_full_name": "Philip Krause",
-      "description": "Our platform empowers retail investors to capitalize on the rising market values of football players, enabling them to capture significant growth. Users can speculate on player market values while football clubs hedge their transfer risks. We create player derivatives through an over-collateralized system that rewards liquidity providers, addressing the gap left by the last football player exchange, which shut down due to mismanagement. As a proof of concept, we've developed an algorithmic, over-collateralized stablecoin pegged to FC Barcelona's market value. Our next crucial step is to establish a reliable data feed to support our protocol.",
-      "github_repository": "https://github.com/phipsae/peggd",
-      "project_demo": "https://peggd.vercel.app/",
-      "link_to_slides": "https://www.canva.com/design/DAGOakrdDGE/WqRK5eQOyST3e8lMaANtcQ/view?utm_content=DAGOakrdDGE&utm_campaign=designshare&utm_medium=link&utm_source=editor",
-      "tech_stack": "Backend Solidity, Front end Wagmi & VIEM"
-    },
-    {
-      "project_name": "propcorn",
-      "team_lead_full_name": "Alberto Granzotto",
-      "description": "Propcorn is a public good designed to incentivize open-source developers by enabling micro-funding for small features or fixes on GitHub. It allows developers to create proposals for issues they find interesting, set a price, and share the link to gather funding from the community. Once the funding goal is met, the funds are released to the developer after a waiting period, ensuring community approval. Propcorn is simple on purpose, focusing only on micro-funding for small development tasks.",
-      "github_repository": "https://github.com/deeecent/propcorn/",
-      "project_demo": "https://propcorn.deeecent.website/",
-      "link_to_slides": "nan",
-      "tech_stack": "HardHat, react, wagmi",
-      "donationAddress": "1BwHRVBz3MTvWCxojDqcAMfdK121Sp86HCRgbs2RtQiXPrY"
-    },
-    {
-      "project_name": "QSTN",
-      "team_lead_full_name": "Orrin Campbell",
-      "description": "QSTN is a self-service AI-powered survey marketplace that allows businesses to fund surveys using Solana tokens and Solana NFTs, rewarding participants while ensuring user consent via zero-knowledge proofs.",
-      "github_repository": "https://github.com/QSTN-US/Solana-QSTN-v2",
-      "project_demo": "https://testnet.qstnus.com",
-      "link_to_slides": "https://docsend.com/view/yj4eyq73rqrvnnga",
-      "tech_stack": "Typescript, Rust, CSS, Javascript"
-    },
-    {
-      "project_name": "Raitify",
-      "team_lead_full_name": "Alexander Schmitt",
-      "description": "Al agents will have different skills, data, reasoning abilities, and histories of having tried a bunch of different things, Raitify makes this information explicit and transparent. Raitify allows agents to become visible and reputable so users can find the right models to advance their work. Our smart contracts give parties the ability to transact with each other to complete work dynamically.",
-      "github_repository": "https://github.com/csmarc/raitify",
-      "project_demo": "nan",
-      "link_to_slides": "https://docs.google.com/presentation/d/1cqw4-dAiPZsOFhg0RfofaiLl0nFXzfNjhzOvjYgrgt8/edit?usp=sharing",
-      "tech_stack": "solana"
-    },
-    {
-      "project_name": "SI<3> Viral $LOVE",
-      "team_lead_full_name": "Zeya Mentsapuu",
-      "description": "Our platform empowers communities by providing decentralized social networks with seamless Web3 interoperability, where each community operates on its own Kusama parachain with custom tokens and shared governance through $LOVE. We foster innovative collaboration by enabling members to connect, barter, and work together through our unique “Lovecoin system”, creating new business opportunities. Our tokenized ecosystem ensures sustainable growth by leveraging Vitality Index for fair and dynamic token value. This approach incentivizes circular economy and supports economic resilience within each community.",
-      "github_repository": "https://www.canva.com/design/DAGON34SPbA/m-26GxKHzxASrl4ALV6GVw/view?utm_content=DAGON34SPbA&utm_campaign=designshare&utm_medium=link&utm_source=editor",
-      "project_demo": "https://www.canva.com/design/DAGON34SPbA/m-26GxKHzxASrl4ALV6GVw/view?utm_content=DAGON34SPbA&utm_campaign=designshare&utm_medium=link&utm_source=editor",
-      "link_to_slides": "https://www.canva.com/design/DAGON34SPbA/m-26GxKHzxASrl4ALV6GVw/view?utm_content=DAGON34SPbA&utm_campaign=designshare&utm_medium=link&utm_source=editor",
-      "tech_stack": "Microservices architecture Backend: Java or Rust Frontend: React Native or Flutter PostgreSQL or Mongo, Web3.js, Polkadot SDK Livepeer and more integrations"
-    },
-    {
-      "project_name": "Solana VM Substrate Runtime",
-      "team_lead_full_name": "Irvin Cardenas",
-      "description": "Solana stands as one of the top 5 smart contract platforms in the blockchain ecosystem and top 5 in market cap. With growing adoption of its technology, we present the integration of the Solana Virtual Machine as a pallet into a Substrate runtime, allowing developers to spin up Polkadot parachains and substrate-based chains that are compatible with the Solana stack.",
-      "github_repository": "https://github.com/kpatch",
-      "project_demo": "nan",
-      "link_to_slides": "https://docs.google.com/presentation/d/1oFYzRXj6Ia6eQF3XWfH-3dvdNluHjreg7z_rIMEfI0Y/edit?usp=sharing",
-      "tech_stack": "Solana / SVM repository, Polkadot SDK / Substrate"
-    },
-    {
-      "project_name": "StarknetMeetups",
-      "team_lead_full_name": "Marek Hakala",
-      "description": "StarknetMeetups is a decentralized event management infrastructure built on StarkNet, where each event is represented by a custom smart contract. The system allows for transparent and immutable RSVP tracking, with functions for attendees to confirm or cancel their attendance. Event details, including name, date, description, and owner, are stored on-chain and can be easily retrieved. This infrastructure provides a secure and efficient way to manage event attendance, leveraging blockchain technology to ensure data integrity and user privacy.",
-      "github_repository": "https://github.com/afterrootq/starknetmeetups",
-      "project_demo": "nan",
-      "link_to_slides": "https://docs.google.com/presentation/d/1k5P0kjDVumERN4n4OmmAn6-oQsZzQB87CBcz3vcW9uo/edit?usp=sharing",
-      "tech_stack": "Cairo, typescript"
-    },
-    {
-      "project_name": "Verfy",
-      "team_lead_full_name": "Delphine De Wulf",
-      "description": "Authentication of e-mail attachments using blockchain technology.",
-      "github_repository": "https://github.com/marlykiwi/verfy",
-      "project_demo": "nan",
-      "link_to_slides": "nan",
-      "tech_stack": "React, Vite, Wagmi, Viem, TypeScript, Solidity, Hardhat, Sepolia Testnet"
-    },
-    {
-      "project_name": "Web 3bune",
-      "team_lead_full_name": "Tim Daubenschütz",
-      "description": "Web 3bune is a protocol to create and distribute token-gated news. Our goal is to realign incentives between journalists and platforms through micro transactions. We‘re allowing users to unlock content directly on the platform freeing the web from clickbait and the adverserial ads-based business model.",
-      "github_repository": "https://github.com/deeecent/web3bune",
-      "project_demo": "https://web3bune.deeecent.website/",
-      "link_to_slides": "https://docs.google.com/presentation/d/1qoHMshbTk0soMMUxPxYr2jD1sI5ToX4TWaRSOH32xRI/edit?usp=sharing",
-      "tech_stack": "JavaScript, Solidity, Hardhat, Farcaster Frames, Kiwi News"
-    },
-    {
-      "project_name": "Web3 Drawbot",
-      "team_lead_full_name": "Mischa Robots",
-      "description": "We are building a robot for an Interactive Robot Art Installation, where robots are drawing on a canvas while driving, controlled by AI and humans. A person can connect to a robot with their smart phone and take control via a web app. We are integrating blockchain into this web app to create a dApp, where a user can connect their wallet to buy a control token and use that control token to take control over the robot. The token becomes also a proof of participation in the installation and the finished drawing is then pushed automatically to every participants wallet as an NFT.",
-      "github_repository": "https://github.com/mischa-robots/drawbot-symmetry-hackathon",
-      "project_demo": "https://www.instagram.com/mischa.ai/",
-      "link_to_slides": "https://docs.google.com/presentation/d/1sJA1RIzh0gFkisng4Wsj6-m4809c6-8Ook7pBDd0VCk/edit?usp=sharing",
-      "tech_stack": "Jetson Nano, Rust, html, js, css, NMKR Api"
-    }
-  ]
-  
+  {
+    "projectName": "Airdrops for Everyone on Polkadot",
+    "teamLead": "Daniel Vaculík",
+    "description": "Airdrops at the moment are very expensive. We aim to make them cheaper by utilising merkle trees/root and merkle proofs. It makes the airdrops multiple times cheaper. This project is a follow-up on an existing pull request to Polkadot SDK.",
+    "eventStartedAt": "funkhaus-2024",
+    "githubRepo": "https://github.com/RostislavLitovkin/AirdropsForEveryone",
+    "demoUrl": "nan",
+    "slidesUrl": "nan",
+    "techStack": "Rust, wasm, typescript, react",
+    "milestones": ["unknown"]
+  },
+  {
+    "projectName": "Alibi",
+    "teamLead": "James Lefrère",
+    "description": "High-resolution location proofs with TLSNotary allow users to prove their geolocation over time while maintaining privacy. By leveraging internet security and Google's data, Alibi lets users with a Google account prove their historical location without revealing unnecessary information, bridging Web2 and Web3.",
+    "eventStartedAt": "funkhaus-2024",
+    "githubRepo": "https://github.com/orgs/w3s-alibi/repositories",
+    "demoUrl": "https://havetorunthisbadboylocally.sorryaboutthat",
+    "slidesUrl": "https://docs.google.com/presentation/d/1sT8KSk_zZ-IuYjFFUmSgybwyKwERL2IJcDuE1_ZZvTs/edit?usp=sharing",
+    "techStack": "Rust, TypeScript, React",
+    "milestones": ["more research needed for next milestone"],
+    "donationAddress": "16ZZ7zpukahhbQDYxSy4pwCSwXj3bDAnFFvVb6VvtFFtuird"
+  },
+  {
+    "projectName": "Anytype - NFT Gating",
+    "teamLead": "Tony Kent",
+    "description": "Anytype Spaces are currently like Communities. You can Join spaces, share links, etc. You can Collaborate together - write docs, chat, etc. Let's add more Web3 SOCIAL FEATURES: add NFT token gating to the Anytype. If someone has a required NFT -> he can join the space.",
+    "eventStartedAt": "funkhaus-2024",
+    "githubRepo": "https://github.com/AnthonyAkentiev/Web3Summit_Hackathon",
+    "demoUrl": "https://anytype.io",
+    "slidesUrl": "https://docs.google.com/presentation/d/1_hwlBbFb36U9f-ePhIKG44maaBdKzqZ6rOF-BKar4k0/edit?usp=sharing",
+    "techStack": "Golang, TypeScript",
+    "milestones": ["unknown"],
+    "donationAddress": "14cxwZgZtr376Bpg6BoMyfEYVD9oNdhmj7L452UgGFX7rxv7"
+  },
+  {
+    "projectName": "ChainView",
+    "teamLead": "Gedas",
+    "description": "Visualise and track transactions of a wallet address in a human-readable format.",
+    "eventStartedAt": "funkhaus-2024",
+    "githubRepo": "https://github.com/gedithejedi/chainview",
+    "demoUrl": "https://chain-view.vercel.app/",
+    "slidesUrl": "https://www.canva.com/design/DAGOe_VaGNI/M--Q61VEF7SCchmFV5-EZg/edit?utm_content=DAGOe_VaGNI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
+    "techStack": "NEXT, and some API calls",
+    "milestones": ["unknown"],
+    "donationAddress": "14MKGDU8XtU3ZD9xDsdkoto5Pyv78NRY384VQ1gUQiYWAQq1"
+  },
+  {
+    "projectName": "ChatPay (as a Dapp, Cere integration)",
+    "teamLead": "Léonard Mangallon",
+    "description": "ChatPay is a Telegram Mini App that brings decentralization to data acquisition for the common good, allowing users to sell their data instead of having it taken by large platforms.",
+    "eventStartedAt": "funkhaus-2024",
+    "githubRepo": "https://github.com/lmangall/chatpay_cere_feature",
+    "demoUrl": "https://t.me/chatpayapp_bot/chatpayapp",
+    "slidesUrl": "https://docs.google.com/presentation/d/1CGZKZNb35VYOfA0cnfN144L2WpR6zfpY_vd9ZaTivbY/edit?usp=sharing",
+    "techStack": "Next.js",
+    "milestones": ["unknown"]
+  },
+  {
+    "projectName": "Clima Compass",
+    "teamLead": "Gesa Schneider",
+    "description": "Clima Compass is a gamified Web3 platform that incentivizes users to make predictions about global climate metrics. By rewarding accurate forecasts, it aims to increase climate awareness, gather valuable data insights, and foster positive environmental impact through partnerships and financial contributions.",
+    "eventStartedAt": "funkhaus-2024",
+    "githubRepo": "https://github.com/mxber2022/Web3HackBerlin",
+    "demoUrl": "nan",
+    "slidesUrl": "https://docs.google.com/presentation/d/12wyW2Bnft6RE8pi__v9P5HoLN77XTzR5vjKrEFdFB_8/edit#slide=id.g20e4fc113c20dbc9_81",
+    "techStack": "Rootstock, Cere Network, Sepolia Testnet, Goldsky Subgraph, SQL, Nextjs, Langchain",
+    "milestones": ["unknown"]
+  },
+  {
+    "projectName": "CodeKarma",
+    "teamLead": "Luke Schoen",
+    "description": "CodeKarma - A CLI tool to check that the code you write aligns with your values written in your manifesto.",
+    "eventStartedAt": "funkhaus-2024",
+    "githubRepo": "https://github.com/ltfschoen/CodeKarma",
+    "demoUrl": "https://github.com/ltfschoen/CodeKarma?tab=readme-ov-file#working-demo",
+    "slidesUrl": "nan",
+    "techStack": "deno",
+    "milestones": ["unknown"]
+  },
+  {
+    "projectName": "Crypto Knights",
+    "teamLead": "Matias Arkano",
+    "description": "Crypto Knight is a revolutionary platform designed to simplify your crypto investments. With Crypto Knight, you can invest in decentralized index funds managed by smart contracts.",
+    "eventStartedAt": "funkhaus-2024",
+    "githubRepo": "https://github.com/arkanoeth/CKweb3summit",
+    "demoUrl": "nan",
+    "slidesUrl": "nan",
+    "techStack": "Solidity, Next.js",
+    "milestones": ["unknown"]
+  },
+  {
+    "projectName": "CTRL+X",
+    "teamLead": "Arikia Millikan",
+    "description": "The Blocklicense is a web3 content licensing registry and relicensing marketplace for text-based journalistic content.",
+    "eventStartedAt": "funkhaus-2024",
+    "githubRepo": "https://github.com/Arikia/ctrl-x",
+    "demoUrl": "nan",
+    "slidesUrl": "https://docs.google.com/presentation/d/1q1j6W8yQc5lN4RPGA9iAMwgvzWgKI3hQ0xQx4C9fIuA/edit?usp=sharing",
+    "techStack": "NextJS, Typescript, Blink (Solana), Phantom Wallet",
+    "milestones": ["unknown"]
+  },
+  {
+    "projectName": "Delegit",
+    "teamLead": "Thibaut Sardan",
+    "description": "Increasing participation turnout is key to decentralized governance. Delegit is a 2-click flow to delegate on Polkadot.",
+    "eventStartedAt": "funkhaus-2024",
+    "githubRepo": "https://github.com/delegit-xyz/dashboard",
+    "demoUrl": "nan",
+    "slidesUrl": "https://docs.google.com/presentation/d/1SWbxKM9O3H5CB0CWYKDpizNt6j3B_gfR2daLCxolOCE/pub?start=false&loop=false&delayms=3000",
+    "techStack": "TS, React, Papi, DotConnect",
+    "milestones": ["unknown"],
+    "donationAddress": "13cJVjVjHpabhge4XEjdXmVPgD6w2UaSp8bpnYX9sDcgwp45"
+  },
+  {
+    "projectName": "DePHY Access",
+    "teamLead": "Darren Seah",
+    "description": "DePHY Access is a dApp that facilitates user access to decentralized resources in the DePIN sector, like GPU rentals and decentralized cloud computing.",
+    "eventStartedAt": "funkhaus-2024",
+    "githubRepo": "https://github.com/jasl/blockspace-hackathon-2024",
+    "demoUrl": "https://drive.google.com/file/d/175yXF5hHe_JqPTLDFhH_kXX3AKnSCs1t/view?usp=sharing",
+    "slidesUrl": "nan",
+    "techStack": "Ollama, EVM Pallet, dephy messaging layer, DePHY ID, Solidity",
+    "milestones": ["unknown"]
+  },
+  {
+    "projectName": "DeSciNet",
+    "teamLead": "Bruno Zell",
+    "description": "The network accepts causal models uploaded by users. Those are then tested against observations in the network and scored by surprise. The lowest surprise model is the consensus model.",
+    "eventStartedAt": "funkhaus-2024",
+    "githubRepo": "https://github.com/BrunoZell/DeSciNet",
+    "demoUrl": "https://no-demo.wtf",
+    "slidesUrl": "nan",
+    "techStack": "F#, Structured Causal Models (Judea Pearl)",
+    "milestones": ["unknown"]
+  },
+  {
+    "projectName": "DOT Takeout",
+    "teamLead": "Karim Jedda",
+    "description": "Dot Takeout is the ultimate tax reporting tool for the Polkadot ecosystem. By aggregating data across all Polkadot chains, Dot Takeout provides users with a comprehensive, automated report of all transactions.",
+    "eventStartedAt": "funkhaus-2024",
+    "githubRepo": "https://github.com/KarimJedda/takeout/",
+    "demoUrl": "https://dottakeout.xyz",
+    "slidesUrl": "https://docs.google.com/presentation/d/1--9A0csRwvrof6-jZSfTFK3GjT1nsqCCW11r-E-eSUI/edit#slide=id.g2206d6f2d92_0_13",
+    "techStack": "Python, Flask, React",
+    "milestones": ["unknown"]
+  },
+  {
+    "projectName": "Empathy Technologies",
+    "teamLead": "Yip ThyDiep Ta",
+    "description": "Empathy Technologies is a project that aims to optimize knowledge transfer and collaboration across diverse fields by mapping and translating complex information into user-specific contexts.",
+    "eventStartedAt": "funkhaus-2024",
+    "githubRepo": "https://github.com/JanetMo/empathy-technologies",
+    "demoUrl": "https://www.figma.com/design/Y8kZM8UnarhOteoPDy10vC/empathy-technologies-mockup?node-id=0-1&t=fHxyXsJoQsMmvKmm-0",
+    "slidesUrl": "https://www.canva.com/design/DAGOd680kCE/CIw3fPEoWmXc5946PZD69A/edit?utm_content=DAGOd680kCE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
+    "techStack": "Python, Figma, C, GraphViz, Rust",
+    "milestones": ["unknown"],
+    "donationAddress": "1EBZ8G69NWwuu1KRFb7mfD7eD5f2xZ7BQkHd6L9fSHzpDGi"
+  },
+  {
+    "projectName": "helixstreet",
+    "teamLead": "Tom Deisen",
+    "description": "Helixstreet is building the future of life sciences and healthcare in the Web3 world. This hack session brought us closer to that vision, creating a flexible parathread pay-as-you-go blockchain foundation.",
+    "eventStartedAt": "funkhaus-2024",
+    "githubRepo": "https://github.com/helixstreet/helixstreet-node",
+    "demoUrl": "https://helixstreet.io",
+    "slidesUrl": "nan",
+    "techStack": "substrate / frame / zombienet",
+    "milestones": ["unknown"]
+  },
+  {
+    "projectName": "How to manage a Smart Co-working via Polkadot OpenGov",
+    "teamLead": "Makar Cherniaev",
+    "description": "This project demonstrates how, with the help of the large Polkadot OpenGov community, we can manage access to a shared coworking space.",
+    "eventStartedAt": "funkhaus-2024",
+    "githubRepo": "https://github.com/nakata5321/robonomics/tree/hackaton",
+    "demoUrl": "nan",
+    "slidesUrl": "https://docs.google.com/presentation/d/1cboIxpV20KAUwUFZfNICT-tYb_jdxNVsUOH4T7Kcsp0/edit?usp=sharing",
+    "techStack": "Polkadot, Robonomics, IPFS, Home Assistant",
+    "milestones": ["unknown"]
+  },
+  {
+    "projectName": "Hypertents",
+    "teamLead": "Seun Lanlege",
+    "description": "Hypertents achieves cross-chain intent settling using Hyperbridge as the bridging layer.",
+    "eventStartedAt": "funkhaus-2024",
+    "githubRepo": "https://github.com/jak-pan/hypertents",
+    "demoUrl": "https://hackmd.io/WLU6CpxeSrix_m0ZiVJ0bg",
+    "slidesUrl": "https://hackmd.io/@Lederstrumpf/hypertents-presentation",
+    "techStack": "Hyperbridge, Solidity, Ethers, React",
+    "milestones": ["unknown"],
+    "donationAddress": ""
+  },
+  {
+    "projectName": "PAPI Actions",
+    "teamLead": "Josep Maria Sobrepere Profitos",
+    "description": "This defines a series of intents, a routing system that uniquely identifies one action to be performed, which can be implemented by dApps or extensions.",
+    "eventStartedAt": "funkhaus-2024",
+    "githubRepo": "https://github.com/polkadot-api/web3-blockspace-actions/tree/main?tab=readme-ov-file",
+    "demoUrl": "https://web3-blockspace-actions.vercel.app/",
+    "slidesUrl": "nan",
+    "techStack": "Polkadot API, React, RxJS",
+    "milestones": ["unknown"],
+    "donationAddress": "12R1XCdgkHysv8Y4ntiXguo4eUYHXjQTmfRjL8FbmezsG71j"
+  },
+  {
+    "projectName": "peggd",
+    "teamLead": "Philip Krause",
+    "description": "Our platform empowers retail investors to capitalize on the rising market values of football players, enabling them to capture significant growth.",
+    "eventStartedAt": "funkhaus-2024",
+    "githubRepo": "https://github.com/phipsae/peggd",
+    "demoUrl": "https://peggd.vercel.app/",
+    "slidesUrl": "https://www.canva.com/design/DAGOakrdDGE/WqRK5eQOyST3e8lMaANtcQ/view?utm_content=DAGOakrdDGE&utm_campaign=designshare&utm_medium=link&utm_source=editor",
+    "techStack": "Backend Solidity, Front end Wagmi & VIEM",
+    "milestones": ["unknown"]
+  },
+  {
+    "projectName": "propcorn",
+    "teamLead": "Alberto Granzotto",
+    "description": "Propcorn is a public good designed to incentivize open-source developers by enabling micro-funding for small features or fixes on GitHub.",
+    "eventStartedAt": "funkhaus-2024",
+    "githubRepo": "https://github.com/deeecent/propcorn/",
+    "demoUrl": "https://propcorn.deeecent.website/",
+    "slidesUrl": "nan",
+    "techStack": "HardHat, react, wagmi",
+    "milestones": ["unknown"],
+    "donationAddress": "1BwHRVBz3MTvWCxojDqcAMfdK121Sp86HCRgbs2RtQiXPrY"
+  },
+  {
+    "projectName": "QSTN",
+    "teamLead": "Orrin Campbell",
+    "description": "QSTN is a self-service AI-powered survey marketplace that allows businesses to fund surveys using Solana tokens and Solana NFTs, rewarding participants while ensuring user consent via zero-knowledge proofs.",
+    "eventStartedAt": "funkhaus-2024",
+    "githubRepo": "https://github.com/QSTN-US/Solana-QSTN-v2",
+    "demoUrl": "https://testnet.qstnus.com",
+    "slidesUrl": "https://docsend.com/view/yj4eyq73rqrvnnga",
+    "techStack": "Typescript, Rust, CSS, Javascript",
+    "milestones": ["unknown"]
+  },
+  {
+    "projectName": "Raitify",
+    "teamLead": "Alexander Schmitt",
+    "description": "Raitify makes information about AI agents explicit and transparent, allowing agents to become visible and reputable so users can find the right models to advance their work.",
+    "eventStartedAt": "funkhaus-2024",
+    "githubRepo": "https://github.com/csmarc/raitify",
+    "demoUrl": "nan",
+    "slidesUrl": "https://docs.google.com/presentation/d/1cqw4-dAiPZsOFhg0RfofaiLl0nFXzfNjhzOvjYgrgt8/edit?usp=sharing",
+    "techStack": "Solana",
+    "milestones": ["unknown"]
+  },
+  {
+    "projectName": "SI<3> Viral $LOVE",
+    "teamLead": "Zeya Mentsapuu",
+    "description": "Our platform empowers communities by providing decentralized social networks with seamless Web3 interoperability, where each community operates on its own Kusama parachain with custom tokens and shared governance through $LOVE.",
+    "eventStartedAt": "funkhaus-2024",
+    "githubRepo": "https://www.canva.com/design/DAGON34SPbA/m-26GxKHzxASrl4ALV6GVw/view?utm_content=DAGON34SPbA&utm_campaign=designshare&utm_medium=link&utm_source=editor",
+    "demoUrl": "https://www.canva.com/design/DAGON34SPbA/m-26GxKHzxASrl4ALV6GVw/view?utm_content=DAGON34SPbA&utm_campaign=designshare&utm_medium=link&utm_source=editor",
+    "slidesUrl": "https://www.canva.com/design/DAGON34SPbA/m-26GxKHzxASrl4ALV6GVw/view?utm_content=DAGON34SPbA&utm_campaign=designshare&utm_medium=link&utm_source=editor",
+    "techStack": "Microservices architecture Backend: Java or Rust, Frontend: React Native or Flutter, PostgreSQL or Mongo, Web3.js, Polkadot SDK, Livepeer and more integrations",
+    "milestones": ["unknown"]
+  },
+  {
+    "projectName": "Solana VM Substrate Runtime",
+    "teamLead": "Irvin Cardenas",
+    "description": "We present the integration of the Solana Virtual Machine as a pallet into a Substrate runtime, allowing developers to spin up Polkadot parachains and substrate-based chains compatible with the Solana stack.",
+    "eventStartedAt": "funkhaus-2024",
+    "githubRepo": "https://github.com/kpatch",
+    "demoUrl": "nan",
+    "slidesUrl": "https://docs.google.com/presentation/d/1oFYzRXj6Ia6eQF3XWfH-3dvdNluHjreg7z_rIMEfI0Y/edit?usp=sharing",
+    "techStack": "Solana / SVM repository, Polkadot SDK / Substrate",
+    "milestones": ["unknown"]
+  },
+  {
+    "projectName": "StarknetMeetups",
+    "teamLead": "Marek Hakala",
+    "description": "StarknetMeetups is a decentralized event management infrastructure built on StarkNet, where each event is represented by a custom smart contract.",
+    "eventStartedAt": "funkhaus-2024",
+    "githubRepo": "https://github.com/afterrootq/starknetmeetups",
+    "demoUrl": "nan",
+    "slidesUrl": "https://docs.google.com/presentation/d/1k5P0kjDVumERN4n4OmmAn6-oQsZzQB87CBcz3vcW9uo/edit?usp=sharing",
+    "techStack": "Cairo, typescript",
+    "milestones": ["unknown"]
+  },
+  {
+    "projectName": "Verfy",
+    "teamLead": "Delphine De Wulf",
+    "description": "Authentication of e-mail attachments using blockchain technology.",
+    "eventStartedAt": "funkhaus-2024",
+    "githubRepo": "https://github.com/marlykiwi/verfy",
+    "demoUrl": "nan",
+    "slidesUrl": "nan",
+    "techStack": "React, Vite, Wagmi, Viem, TypeScript, Solidity, Hardhat, Sepolia Testnet",
+    "milestones": ["unknown"]
+  },
+  {
+    "projectName": "Web 3bune",
+    "teamLead": "Tim Daubenschütz",
+    "description": "Web 3bune is a protocol to create and distribute token-gated news. Our goal is to realign incentives between journalists and platforms through micro transactions.",
+    "eventStartedAt": "funkhaus-2024",
+    "githubRepo": "https://github.com/deeecent/web3bune",
+    "demoUrl": "https://web3bune.deeecent.website/",
+    "slidesUrl": "https://docs.google.com/presentation/d/1qoHMshbTk0soMMUxPxYr2jD1sI5ToX4TWaRSOH32xRI/edit?usp=sharing",
+    "techStack": "JavaScript, Solidity, Hardhat, Farcaster Frames, Kiwi News",
+    "milestones": ["unknown"]
+  },
+  {
+    "projectName": "Web3 Drawbot",
+    "teamLead": "Mischa Robots",
+    "description": "We are building a robot for an Interactive Robot Art Installation, where robots are drawing on a canvas while driving, controlled by AI and humans. A user connects their wallet to buy a control token and take control over the robot.",
+    "eventStartedAt": "funkhaus-2024",
+    "githubRepo": "https://github.com/mischa-robots/drawbot-symmetry-hackathon",
+    "demoUrl": "https://www.instagram.com/mischa.ai/",
+    "slidesUrl": "https://docs.google.com/presentation/d/1sJA1RIzh0gFkisng4Wsj6-m4809c6-8Ook7pBDd0VCk/edit?usp=sharing",
+    "techStack": "Jetson Nano, Rust, HTML, JS, CSS, NMKR Api",
+    "milestones": ["unknown"]
+  }
+]

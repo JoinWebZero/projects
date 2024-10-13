@@ -8,16 +8,17 @@ type ProjectsContextProps = {
 }
 
 export type Project = {
-  donationAddress: string
-  eventStartedAt: string
-  slidesUrl: string
-  demoUrl: string
-  githubRepo: string
-  description: string
+
   projectName: string
   teamLead: string
+  description: string
+  eventStartedAt: string
+  githubRepo: string
+  demoUrl: string
+  slidesUrl: string
   techStack: string
-  milestones: string
+  donationAddress: string
+  milestones?: string
 }
 
 export interface IProjectsContext {

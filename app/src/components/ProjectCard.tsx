@@ -14,7 +14,6 @@ export const ProjectCard = ({ Project: d }: Props) => {
   const [showDetails, setShowDetails] = useState<boolean>(false);
   const navigate = useNavigate();
 
-
   useEffect(() => {
     if (copied) {
       setTimeout(() => setCopied(false), 1000);
@@ -26,8 +25,6 @@ export const ProjectCard = ({ Project: d }: Props) => {
   };
 
   const onDonate = () => {
-    // const slug = d.projectName.replace(/\s+/g, '-').toLowerCase();
-
     navigate(`/project/${d.donationAddress}`);
   }
 
@@ -36,45 +33,46 @@ export const ProjectCard = ({ Project: d }: Props) => {
       <div className="flex flex-col">
         {/* Project Basic Info */}
         <div className="flex flex-row">
-          {/* Image Section (if you have images) */}
-          {/* <div className="p-2 w-[10%]">
-            <img className="rounded-3xl" width="100" src={d.image} alt={d.project_name} />
-          </div> */}
           <div className="p-2 w-full">
             <h2 className="font-bold text-xl">{d.projectName}</h2>
 
-      <div className="grid">
+            <div>
+              {/* <div className="items-center text-sm">
+                <strong>Name: </strong>
+                {d.teamLead}
+              </div> */}
+
+              {/* Render Project Address only if it exists */}
+              {/* {d.donationAddress && (
+                <div className="items-center text-sm">
+                  <strong>Project address: </strong>
+                  <a
+                    href={`https://assethub-polkadot.subscan.io/account/${d.donationAddress}`}
+                    className="text-blue-500"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {d.donationAddress}
+                  </a>
+                </div>
+              )} */}
+
               <div className="items-center text-sm">
-                <strong>Team lead: </strong>
+                <p>{d.description}</p>
               </div>
-
-              <p>{d.teamLead}</p>
-
-              <div className="items-center text-sm">
-                <strong>Donation address: </strong>
-                <a
-                  href={`https://assethub-polkadot.subscan.io/account/${d.donationAddress}`}
-                  className="text-blue-500 underline"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                 {d.donationAddress}
-                </a>
-      
-              </div>
-              
-
-              {/* <div className="items-center pt-10">__description__</div> */}
-
-              <div className="items-center text-sm">
-                <strong>Last milestone update:</strong>
-              <p>{d.milestones}</p>
+              <div className="items-center text-sm mt-4">
+                <strong>Tags:</strong>
+                <p>{d.techStack}</p>
               </div>
             </div>
 
             <div className="mt-4 p-4 border-t border-gray-200">
-
-              <p className="mt-2">{d.description}...</p>
+              {/* <p className="mt-2">{d.description}...</p> */}
+              <div className="items-center text-sm">
+                <strong>Last milestone update: </strong>
+                {d.milestones}
+              </div>
+              {/* Render links only if they exist */}
               <div className="flex flex-wrap gap-4 mt-4">
                 {d.githubRepo && (
                   <a
@@ -108,17 +106,6 @@ export const ProjectCard = ({ Project: d }: Props) => {
                 )}
               </div>
             </div>
-
-            {/* <div className="flex flex-col space-y-4">
-              {d.donationAddress && d.donationAddress !== 'nan' && (
-                <Button variant="secondary" className="mt-4 " onClick={onDonate}>
-                  Support
-                </Button>
-              )}
-              <Button className="mt-4" onClick={onDonate}>
-                Updates
-              </Button>
-            </div> */}
           </div>
         </div>
 

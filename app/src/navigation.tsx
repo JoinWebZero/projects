@@ -48,13 +48,19 @@ export const Navigation = ({
           Home
         </Link>
 
-        <Link
-          to="/projects"
+        {/* <Link
+          to="/past-events"
           className="flex items-center gap-4 px-2.5 text-muted-foreground hover:text-foreground"
         >
           Past Blockspace Editions
-        </Link>
+        </Link> */}
         
+        <Link
+          to="/milestones"
+          className="flex items-center gap-4 px-2.5 text-muted-foreground hover:text-foreground"
+        >
+          Submit a milestone
+        </Link>
       </nav>
       
       <nav className="mt-auto flex flex-row items-center justify-center gap-8 px-2 sm:py-5">

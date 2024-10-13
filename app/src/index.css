@@ -92,3 +92,66 @@
     background-position: center;
   }
 }
+
+select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  background-color: white;
+  color: black;
+}
+
+select option {
+  color: black;
+  background-color: white;
+}
+
+.projects-page {
+  padding: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+@media (min-width: 640px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1280px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.project-card {
+  background-color: #fff;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h2 {
+  margin-bottom: 12px;
+}
+
+.project-card p {
+  margin-bottom: 8px;
+}
+
+.text-blue-500 {
+  color: #4299e1;
+}
+
+.text-blue-500:hover {
+  color: #2b6cb0;
+}
