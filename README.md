@@ -1,4 +1,6 @@
-# Projects
+![Banner](./app/src/assets/img/Symmetry_Banner_2.png)
+
+# Projects 
 
 This initiative started with the submissions for the Blockspace Symmetry Hackathon (Aug. 19-12, 2024, Funkhaus, Berlin), whereby 8 submissions were selected to be the ones to receive cash prizes.
 The prizes were given in two milestones: 60% given upfront and 40% to be distributed upon the completion of a second milestone.
