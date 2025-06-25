@@ -5,8 +5,7 @@ import {
   TooltipContent,
   TooltipTrigger,
 } from '@/components/ui/tooltip'
-import { Link, useLocation } from 'react-router-dom'
-import PolkadotIcon from '@/assets/img/polkadotIcon.svg?react'
+import { Link } from 'react-router-dom'  
 import { FaCheckCircle } from 'react-icons/fa'
 import { TbLoaderQuarter } from 'react-icons/tb'
 import { Twitter, Github, Moon, Sun } from 'lucide-react'
@@ -21,10 +20,7 @@ interface Props {
 }
 
 
-export const Navigation = ({
-  setLightClientLoaded,
-}: Props) => {
-  const { pathname } = useLocation()
+export const Navigation = ({}: Props) => {
   const { theme, setTheme } = useTheme()
   const { lightClientLoaded, isLight } = useNetwork()
 
@@ -33,13 +29,6 @@ export const Navigation = ({
   return (
     <aside className="fixed inset-y-0 left-0 z-10 hidden w-[14rem] flex-col border-r bg-background sm:flex">
       <nav className="items-left flex flex-col gap-4 px-4 sm:py-5">
-        {/* <div className="flex text-2xl font-extrabold text-primary">
-          <PolkadotIcon
-            className="max-h-[100%] w-12 self-center"
-            width={'2.2rem'}
-            height={'2.2rem'}
-          />
-        </div> */}
         
         <Link
           to="/"
@@ -48,12 +37,12 @@ export const Navigation = ({
           Home
         </Link>
 
-        {/* <Link
+        <Link
           to="/past-events"
           className="flex items-center gap-4 px-2.5 text-muted-foreground hover:text-foreground"
         >
           Past Blockspace Editions
-        </Link> */}
+        </Link>
         
         <Link
           to="/milestones"

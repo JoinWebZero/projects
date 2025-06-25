@@ -1,15 +1,7 @@
 import { type ClassValue, clsx } from 'clsx'
 import {
   LucideProps,
-  Globe,
-  Users,
-  PiggyBank,
-  Landmark,
   Component,
-  Speech,
-  ScanText,
-  Brain,
-  Info,
   Code,
 } from 'lucide-react'
 

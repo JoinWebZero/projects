@@ -8,7 +8,7 @@ interface Props {
     Project: Project;
   }
   
-export const ActiveProjects = ({ Project: d }: Props) => {
+export const ActiveProjects = ( {}: Props) => {
 
     const { projects } = useProjects();
 

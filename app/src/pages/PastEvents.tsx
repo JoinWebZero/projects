@@ -1,6 +1,3 @@
-import { ProjectCard } from '@/components/ProjectCard';
-import { About } from '@/components/About';
-import { ActiveProjects } from '@/components/ActiveProjects';
 
 export const Home = () => {
   return (

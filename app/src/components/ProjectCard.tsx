@@ -1,9 +1,6 @@
-import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { useState, useEffect } from 'react';
 import { Project } from '@/contexts/ProjectsContext';
-import { useNavigate } from 'react-router-dom';
-import { Label } from '@radix-ui/react-dropdown-menu';
 
 interface Props {
   Project: Project;
@@ -11,22 +8,13 @@ interface Props {
 
 export const ProjectCard = ({ Project: d }: Props) => {
   const [copied, setCopied] = useState<boolean>(false);
-  const [showDetails, setShowDetails] = useState<boolean>(false);
-  const navigate = useNavigate();
+  const showDetails = useState<boolean>(false);
 
   useEffect(() => {
     if (copied) {
       setTimeout(() => setCopied(false), 1000);
     }
   }, [copied]);
-
-  const onSupport = () => {
-    setShowDetails(!showDetails);
-  };
-
-  const onDonate = () => {
-    navigate(`/project/${d.donationAddress}`);
-  }
 
   return (
     <Card className="border-2 flex flex-col p-4 mb-5">
