@@ -37,13 +37,21 @@
   {
     "projectName": "ChainView",
     "teamLead": "Gedas",
-    "description": "Visualise and track transactions of a wallet address in a human-readable format.",
+    "description": "Visualise and track transactions of a wallet on all EVM chains, in a human-readable format.",
     "eventStartedAt": "funkhaus-2024",
     "githubRepo": "https://github.com/gedithejedi/chainview",
     "demoUrl": "https://chain-view.vercel.app/",
     "slidesUrl": "https://www.canva.com/design/DAGOe_VaGNI/M--Q61VEF7SCchmFV5-EZg/edit?utm_content=DAGOe_VaGNI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
-    "techStack": "NEXT, and some API calls",
-    "milestones": ["unknown"],
+    "techStack": "NEXT, mongoDB, ethers.js and some api's for transaction and token data",
+    "milestones": [
+      "Deploy an MVP with basic multichain transacion fetching and graph output",
+      "Improved and more reliable fetching of transactions",
+      "Caching system to avoid refetching the same data and improve speed of the app for returning users",
+      "Advanced filtering by time, wallets and token", 
+      "All multichain transactions in a table format", 
+      "Log-in flow", 
+      "Improve general UI/UX"
+    ],
     "donationAddress": "14MKGDU8XtU3ZD9xDsdkoto5Pyv78NRY384VQ1gUQiYWAQq1"
   },
   {
