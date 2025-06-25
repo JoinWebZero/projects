@@ -6,12 +6,12 @@ export const About = () => {
 
           {/* Title or Headline */}
           <h2 className="text-3xl font-extrabold sm:text-4xl">
-            Projects submitted at the Blockspace Hackathons
+            Blockspace Builders Portal
           </h2>
 
           {/* Paragraph content */}
           <p className="mt-2 text-lg max-w-3xl mx-auto">
-            You can see the milestones reached by projects who won prizes and continued working on their projects post-hackathon.
+            Keep an eye on the projects working on post-hackathon milestones.
           </p>
 
         </div>
